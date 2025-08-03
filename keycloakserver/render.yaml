@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: keycloak
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: false
+    envVars:
+      - key: KC_BOOTSTRAP_ADMIN_USERNAME
+        value: admin
+      - key: KC_BOOTSTRAP_ADMIN_PASSWORD
+        value: admin
+    ports:
+      - 8080
