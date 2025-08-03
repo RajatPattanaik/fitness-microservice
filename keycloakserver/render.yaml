@@ -3,7 +3,7 @@ services:
     name: keycloak
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./keycloak/Dockerfile
     autoDeploy: false
     envVars:
       - key: KC_BOOTSTRAP_ADMIN_USERNAME
