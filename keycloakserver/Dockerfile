@@ -8,5 +8,5 @@ ENV KC_HOSTNAME_STRICT=false
 ENV KC_BOOTSTRAP_ADMIN_USERNAME=admin
 ENV KC_BOOTSTRAP_ADMIN_PASSWORD=admin
 
-# EXPLICIT: Ensure Keycloak binds to 0.0.0.0 and not localhost
-CMD ["start-dev", "--http-host=0.0.0.0"]
+# Bind only to localhost
+CMD ["start-dev", "--http-host=localhost"]
